@@ -1,0 +1,40 @@
+{
+    "name": "ucraft-com/image-manipulator",
+    "description": "ImageManipulator is a versatile library offering advanced image processing features, including resizing, trimming, cropping, and WebP conversion.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Uc\\ImageManipulator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tigran Mesropyan",
+            "email": "tiko@ucraft.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "ext-imagick": "*",
+        "intervention/image": "^3.7"
+    },
+    "require-dev": {
+        "orchestra/testbench": "8.24.0",
+        "phpunit/phpunit": "9.6.x-dev",
+        "ext-gd": "*"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Uc\\ImageManipulator\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uc\\ImageManipulator\\ImageManipulatorServiceProvider"
+            ]
+        }
+    }
+}
